@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>FracturePointMultiplayer</AssemblyName>
+    <Version>0.3.0</Version>
+    <Authors>x1pee</Authors>
+    <Copyright>Copyright (c) 2026 x1pee</Copyright>
+    <LoaderRoot Condition="'$(LoaderRoot)' == ''">../runtime/BepInEx</LoaderRoot>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="$(LoaderRoot)/core/*.dll" Exclude="$(LoaderRoot)/core/dobby.dll" />
+    <Reference Include="$(LoaderRoot)/interop/Assembly-CSharp.dll;$(LoaderRoot)/interop/UnityEngine*.dll;$(LoaderRoot)/interop/Unity.InputSystem.dll;$(LoaderRoot)/interop/DungeonArchitect.Core.dll;$(LoaderRoot)/interop/Il2Cppmscorlib.dll;$(LoaderRoot)/interop/KAnimationCore.Runtime.dll;$(LoaderRoot)/interop/FPSAnimationFramework.Runtime.dll;$(LoaderRoot)/interop/Il2CppSystem.dll" />
+    <Reference Include="$(LoaderRoot)/interop/Assembly-CSharp-firstpass.dll" />
+    <Reference Include="$(LoaderRoot)/interop/ImpactCFX.dll" />
+    <Reference Include="$(LoaderRoot)/interop/RayFireAssembly.dll" />
+    <Reference Include="$(LoaderRoot)/interop/Unity.TextMeshPro.dll" />
+    <Reference Include="$(LoaderRoot)/interop/DungeonArchitect*.dll" />
+    <Reference Include="$(LoaderRoot)/interop/Unity.RenderPipelines*.dll;$(LoaderRoot)/interop/ScreenSpaceReflections.dll" />
+    <Reference Include="$(LoaderRoot)/interop/com.alteregogames.aeg-fsr.Runtime*.dll" />
+  </ItemGroup>
+</Project>
